@@ -1,0 +1,23 @@
+{
+  "name": "dserver",
+  "version": "1.0.0",
+  "description": "template",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/davidweining2333/dSever.git"
+  },
+  "keywords": [
+    "node",
+    "server"
+  ],
+  "author": "david",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/davidweining2333/dSever/issues"
+  },
+  "homepage": "https://github.com/davidweining2333/dSever#readme"
+}
