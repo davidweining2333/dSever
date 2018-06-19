@@ -15,7 +15,7 @@ router.use('/', function (request, response, next) {
 //3.1 get请求
 router.get('/getShops', function (request, response) {
     // console.log(request)
-    response.send('get请求成功')
+    response.send('get请求成功1222')
 })
 
 //3.2 post请求
