@@ -5,17 +5,25 @@ var qs = require("querystring");
 var path = require("path");
 var express = require("express");
 
+const config = require("./config/config");
+
 //2. 创建express服务器
 var app = express();
+// 全局对象
+global.config = config;
 
-app.use(express.static('dist'));
+// 引入mongodb
+require("./db/db.js");
+
+// app.use(express.static('dist'));
+app.use(express.static('static'));
 
 //3. 创建中间件:use
 //截取请求, 拦截回调
 app.use('/', function (request, response, next) {
-    console.log('执行中间件')
+    // console.log('执行中间件')
     // console.log('获取数据库数据')
-    console.log(request.query.page)
+    // console.log(request.query.page)
     next()
 })
 

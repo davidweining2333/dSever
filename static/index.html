@@ -52,7 +52,7 @@
     <div class="btn" id="next">next</div>
     <div class="btn" id="interval">interval</div>
     <script>
-        var time = 2,
+        var time = 5,
             fps = 60,
             timer;
 
@@ -76,7 +76,7 @@
             intervalFn("n",true);
         });
 
-        // 滚动一次后是否结束
+        // isLast滚动一次后是否结束
         function intervalFn(direction,isLast) {
             if (timer) {
                 return;
