@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "pm2":"pm2 start index.js --watch"
+    "pm2": "pm2 start --node-args='--inspect-brk' index.js --watch"
   },
   "repository": {
     "type": "git",
@@ -22,6 +22,7 @@
   },
   "homepage": "https://github.com/davidweining2333/dSever#readme",
   "dependencies": {
+    "axios": "^0.18.0",
     "connect-timeout": "^1.9.0",
     "express": "^4.16.3",
     "http-proxy-middleware": "^0.18.0",

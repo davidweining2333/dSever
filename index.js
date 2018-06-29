@@ -13,7 +13,8 @@ var app = express();
 global.config = config;
 
 // 引入mongodb
-require("./db/db.js");
+var db = require("./db/db.js");
+console.log(db);
 
 // app.use(express.static('dist'));
 app.use(express.static('static'));
